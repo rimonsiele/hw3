@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Homework 225
+        
+    </title>
+    <meta charset="utf-8"/>	
+	<link rel="stylessheet" href="css/styles.css" />
+    
+
+    <script src="script.js"></script>
+
+  </head>
+
+  <body>
+	  <h1>HOMEWORK</h1> 
+	  <h2>Force</h2>
+  
+       <form id="form-Force" action="index.html" method="post">
+		<div class="force">
+		<label for="mass">Mass</label>
+		<input type="text" id="mass" />
+		 <label for="acceleration">Acceleration</label>
+		 <input type="text" id="acceleration" />
+		<input type="button" onClick="multiplyBy()" Value="Calculate" />
+		<p>Force equal to :
+			<span id = "result"></span>
+            <div class="container">
+
+			</p>
+		</div>
+	
+<div class="Displacement">
+
+<h2>Displacement</h2>
+	<label for="u">u(m/s^2)</label>
+		 <input type="text" id="u" placeholder='initial velocity' />
+    <label for="a">a(m/s^2)</label>
+		 <input type="text" id="a" placeholder='acceleration' />
+    <label for="t">t(s)</label>
+		 <input type="text" id="t" placeholder='time' />
+  <input type="button" onClick="computeDisplacement()" Value="Calculate" />
+  <p>Displacement equal to :
+	<span id = "d-result"></span>
+	</p>
+</div>
+<div class="Clickme">
+<h2>Quadratic</h2>
+
+  <input type="button" onClick="computeQuadratic()" Value="Click Here to Calculate" />
+  <p>The roots of quadratic equation are :
+	<span id = "q-result"></span>
+	</p>
+
+<h2>Finance</h2>
+
+	<input type="button" onClick="computePmt()" Value="Click Here to Calculate" />
+	<p>Present value of annuity equal to :
+	  <span id = "pmt-result"></span>
+	  </p>
+</div>
+
+</form>
+
+	<script src="./js/script.js"></script>
+  </body>
+  <style>
+    h1{
+    
+        font-family: 'Stick No Bills', sans-serif;
+    }
+    
+    </style>
+  </html>
